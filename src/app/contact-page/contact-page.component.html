@@ -69,73 +69,19 @@
               <mat-card class="mat-elevation-z8"> 
             <mat-card-title 
      style="text-align:center;"
-     >Formulário de Contato</mat-card-title>
+     >Nossa Localização</mat-card-title>
 
             <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
       
       
               <mat-tab label="">
-                <mat-card-content>
-                  <form #messageForm="ngForm" (ngSubmit)="messageForm.valid && onSubmit(messageForm)">
-                    <mat-form-field>
-                      <input
-                        matInput
-                        placeholder="Nome"
-                        required
-                        name="name"
-                        ngModel
-                        #name="ngModel">
-                      <mat-icon matSuffix>perm_identity</mat-icon>
-                      <mat-error
-                        *ngIf="name.invalid">
-                        nome é requerido
-                      </mat-error>
+                <mat-card-content >
+                 
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5336889513856!2d-46.68303548554342!3d-23.549268567029713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce579208cba14d%3A0x62ac14ef4de3f0dd!2sCentro%20Universit%C3%A1rio%20Sumar%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1590546544404!5m2!1spt-BR!2sbr"
+                       class="google-map-iframe" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      
         
-                    </mat-form-field>
-                    <mat-form-field>
-                      <input
-                        matInput
-                        placeholder="Email"
-                        required
-                        name="email"
-                        ngModel
-                        #email="ngModel">
-                        <mat-error *ngIf="email.invalid">Email é requerido!</mat-error>
-                      <mat-icon matSuffix>email</mat-icon>
-                    </mat-form-field>
-                    <mat-form-field>
-                      <input
-                        matInput
-                        placeholder="Mensagem"
-                        type="message"
-                        required
-                        minlength="15"
-                        name="message"
-                        ngModel
-                        #message="ngModel"
-                        >
-                        <mat-error
-                          *ngIf="message.errors && message.errors.required">
-                          Mensagem é requerida!
-                        </mat-error>
-                        <mat-error
-                          *ngIf="message.errors && message.errors.minlength">
-                          A mensagem deve ter 15 digitos ou mais!
-                        </mat-error>
-                      <mat-icon matSuffix>message</mat-icon>
-                    </mat-form-field>
-                   
-                    <button
-                      type="submit"
-                      value="Message"
-                      mat-raised-button
-                      color="primary"
-                      class="message-button">
-        
-                      Enviar
-                    </button>
-                   
-                  </form>
+                    
                 </mat-card-content>
               </mat-tab>
             </mat-tab-group>
