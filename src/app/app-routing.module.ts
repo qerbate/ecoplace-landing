@@ -6,10 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { WhoComponent } from './who/who.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ContactComponent } from './contact/contact.component';
-import {ContactDetailsComponent} from './contact-details/contact-details.component';
-import {ContactStatComponent} from './contact-stat/contact-stat.component';
-import {AddContactComponent} from './add-contact/add-contact.component';
-import {EditContactComponent} from './edit-contact/edit-contact.component';
+
 import { InfoComponent } from './info/info.component';
 import { FooterComponent } from './footer/footer.component';
 import { WhoPageComponent } from './who-page/who-page.component';
@@ -38,24 +35,13 @@ const routes: Routes = [
    data: {title: `Lista de Contato`}
   },
  
-  {path: 'contact-details/:id',
-  component: ContactDetailsComponent,
-  data: {title: `Contato Detalhes`}
-  },
+ 
 
  
-  {path: 'contact-stat',
-  component: ContactStatComponent,
-  data: {title: `Contato Estatística`}
-  },
-  {path: 'add-contact',
-  component: AddContactComponent,
-  data: {title: `Add Contato`}
-  },
-  {path: 'edit-contact/:id',
-  component: EditContactComponent,
-  data: {title: `Edite Contato`}
-  },
+ 
+  
+
+
   
   {path:  'Info', component: InfoComponent},
   { path: 'Footer', component: FooterComponent },

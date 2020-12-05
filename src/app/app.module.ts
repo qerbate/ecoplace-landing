@@ -16,10 +16,9 @@ import { WhoPageComponent } from './who-page/who-page.component';
 import { FeaturePageComponent } from './feature-page/feature-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
-import { AddContactComponent } from './add-contact/add-contact.component';
-import { ContactDetailsComponent } from './contact-details/contact-details.component';
-import { EditContactComponent } from './edit-contact/edit-contact.component';
-import { ContactStatComponent } from './contact-stat/contact-stat.component';
+
+
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -60,10 +59,7 @@ import { AuthGuard } from './auth/auth.guard';
     WhoComponent,
     FeatureComponent,
     ContactComponent,
-    AddContactComponent,
-    ContactDetailsComponent,
-    EditContactComponent,
-    ContactStatComponent,
+    
     InfoComponent,
     FooterComponent,
     WhoPageComponent,
